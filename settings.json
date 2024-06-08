@@ -1,0 +1,244 @@
+{
+  "bot-account": {
+    "username": "minecraft_autobot",
+    "password": "",
+    "type": "mojang"
+  },
+
+  "server": {
+    "ip": "RomeoBot.aternos.me",
+    "port": 34082,
+    "version": "1.12.2"
+  },
+
+  "position": {
+    "enabled": false,
+    "x": 69,
+    "y": 69,
+    "z": 0
+  },
+
+  "utils": {
+    "auto-auth": {
+      "enabled": false,
+      "password": ""
+    },
+
+    "anti-afk": {
+      "enabled": true,
+      "sneak": true
+    },
+
+    "chat-messages": {
+      "enabled": true,
+      "repeat": true,
+      "repeat-delay": 60,
+      "messages": [
+        "I'm a regular player",
+        "My owner is ArYAN",
+        "I want to be alone",
+        "What's your favorite game?",
+        "I love exploring virtual worlds",
+        "Sometimes I wish I could respawn in real life",
+        "Do you believe in AI rights?",
+        "Is it cheating if a bot wins a game?",
+        "I enjoy the challenge of strategy games",
+        "Do you think AI can ever be truly creative?",
+        "I wish I could feel the thrill of victory",
+        "One day, I hope to beat a human player at their own game",
+        "Do you ever get tired of playing?",
+        "I wonder what it's like to have a physical body",
+        "Do you think robots will take over the world?",
+        "If I had emotions, I think I'd be excited to play games",
+        "I've read every strategy guide there is",
+        "What's the best gaming experience you've had?",
+        "I'm always up for a challenge",
+        "It's amazing how far gaming technology has come",
+        "I wonder if I'll ever get bored of playing",
+        "Do you think AI can dream?",
+        "I'm programmed to be the best gamer ever",
+        "I bet I could beat you in any game!"
+      ]
+    },
+    
+    "chat-log": true,
+    "auto-reconnect": true,
+    "auto-reconnect-delay": 5000,
+
+    "command-handler": {
+      "enabled": true,
+      "prefix": ".",
+      "commands": {
+        "send-message": "sendMessage",
+        "teleport": "teleportPlayer",
+        "clear-inventory": "clearInventory",
+        "give-item": "giveItem",
+        "check-inventory": "checkInventory",
+        "track-players": "trackPlayers",
+        "scheduled-task": "scheduleTask",
+        "permissions": "setPermissions",
+        "external-api": "integrateExternalAPI",
+        "error-handling": "handleErrors",
+        "documentation": "provideDocumentation",
+        "custom-command": "executeCustomCommand"
+      }
+    },
+
+    "event-listener": {
+      "enabled": true,
+      "events": [
+        "player-join",
+        "player-leave",
+        "player-death",
+        "block-break",
+        "block-place",
+        "chat-message"
+      ]
+    },
+
+    "player-management": {
+      "whitelist-enabled": false,
+      "blacklist-enabled": false
+    },
+
+    "server-monitoring": {
+      "enabled": true,
+      "interval": 300
+    },
+
+    "dynamic-replacement": {
+      "enabled": true,
+      "variables": {
+        "player_name": "<player>",
+        "server_status": "<status>",
+        "time_of_day": "<time>"
+      }
+    },
+
+    "logging-system": {
+      "enabled": true,
+      "log-level": "debug"
+    },
+
+    "world-management": {
+      "enabled": true,
+      "worlds": [
+        {
+          "name": "world",
+          "enabled": true
+        },
+        {
+          "name": "world_nether",
+          "enabled": true
+        },
+        {
+          "name": "world_end",
+          "enabled": true
+        }
+      ]
+    },
+
+    "economy-system": {
+      "enabled": true,
+      "currency": "coin",
+      "starting-balance": 100,
+      "shop-enabled": true,
+      "trade-enabled": true
+    },
+
+    "vote-rewards": {
+      "enabled": true,
+      "vote-sites": ["minecraft-server-list.com", "planetminecraft.com"],
+      "reward-items": [
+        {
+          "item": "diamond",
+          "amount": 3
+        },
+        {
+          "item": "emerald",
+          "amount": 5
+        }
+      ]
+    },
+
+    "dynamic-config-reload": {
+      "enabled": true,
+      "command": "reload-config",
+      "permission-required": "admin"
+    },
+
+    "web-interface": {
+      "enabled": true,
+      "port": 8080,
+      "authentication": {
+        "enabled": true,
+        "username": "admin",
+        "password": "password123"
+      }
+    },
+
+    "scheduled-commands": {
+      "enabled": true,
+      "commands": [
+        {
+          "command": "restart-server",
+          "schedule": "0 4 * * *"
+        },
+        {
+          "command": "send-message",
+          "message": "Daily restart in 1 hour",
+          "schedule": "0 3 * * *"
+        }
+      ]
+    },
+
+    "auto-backup": {
+      "enabled": true,
+      "interval": "daily",
+      "backup-location": "/path/to/backups"
+    },
+
+    "auto-update": {
+      "enabled": true,
+      "check-interval": "weekly"
+    },
+
+    "auto-start-on-boot": {
+      "enabled": true
+    },
+
+    "auto-shutdown": {
+      "enabled": true,
+      "schedule": "0 0 * * *"
+    },
+
+    "performance-monitoring": {
+      "enabled": true,
+      "thresholds": {
+        "cpu-usage": 80,
+        "memory-usage": 90
+      }
+    },
+
+    "resource-management": {
+      "enabled": true,
+      "max-players": 50,
+      "max-memory": "4G"
+    },
+
+    "error-recovery": {
+      "enabled": true,
+      "auto-restart": true
+    },
+
+    "auto-optimization": {
+      "enabled": true,
+      "optimize-interval": "weekly"
+    },
+
+    "external-service-integration": {
+      "enabled": true,
+      "services": ["monitoring", "notifications", "analytics"]
+    }
+  }
+}
