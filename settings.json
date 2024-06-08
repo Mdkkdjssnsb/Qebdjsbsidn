@@ -1,34 +1,29 @@
 {
   "bot-account": {
     "username": "minecraft_autobot",
-    "password": "",
+    "password": "your_password_here",  // Ensure the password field is filled
     "type": "mojang"
   },
-
   "server": {
     "ip": "EnderWorldCraft.aternos.me",
     "port": 38746,
-    "version": "1.20"
+    "version": "1.12.2"  // Ensure the version string is correct
   },
-
   "position": {
     "enabled": false,
     "x": 69,
     "y": 69,
     "z": 0
   },
-
   "utils": {
     "auto-auth": {
       "enabled": false,
       "password": ""
     },
-
     "anti-afk": {
       "enabled": true,
       "sneak": true
     },
-
     "chat-messages": {
       "enabled": true,
       "repeat": true,
@@ -60,11 +55,9 @@
         "I bet I could beat you in any game!"
       ]
     },
-    
     "chat-log": true,
     "auto-reconnect": true,
     "auto-reconnect-delay": 5000,
-
     "command-handler": {
       "enabled": true,
       "prefix": ".",
@@ -83,7 +76,6 @@
         "custom-command": "executeCustomCommand"
       }
     },
-
     "event-listener": {
       "enabled": true,
       "events": [
@@ -95,17 +87,14 @@
         "chat-message"
       ]
     },
-
     "player-management": {
       "whitelist-enabled": false,
       "blacklist-enabled": false
     },
-
     "server-monitoring": {
       "enabled": true,
       "interval": 300
     },
-
     "dynamic-replacement": {
       "enabled": true,
       "variables": {
@@ -114,12 +103,10 @@
         "time_of_day": "<time>"
       }
     },
-
     "logging-system": {
       "enabled": true,
       "log-level": "debug"
     },
-
     "world-management": {
       "enabled": true,
       "worlds": [
@@ -137,7 +124,6 @@
         }
       ]
     },
-
     "economy-system": {
       "enabled": true,
       "currency": "coin",
@@ -145,7 +131,6 @@
       "shop-enabled": true,
       "trade-enabled": true
     },
-
     "vote-rewards": {
       "enabled": true,
       "vote-sites": ["minecraft-server-list.com", "planetminecraft.com"],
@@ -160,13 +145,11 @@
         }
       ]
     },
-
     "dynamic-config-reload": {
       "enabled": true,
       "command": "reload-config",
       "permission-required": "admin"
     },
-
     "web-interface": {
       "enabled": true,
       "port": 8080,
@@ -176,7 +159,6 @@
         "password": "password123"
       }
     },
-
     "scheduled-commands": {
       "enabled": true,
       "commands": [
@@ -191,27 +173,22 @@
         }
       ]
     },
-
     "auto-backup": {
       "enabled": true,
       "interval": "daily",
       "backup-location": "/path/to/backups"
     },
-
     "auto-update": {
       "enabled": true,
       "check-interval": "weekly"
     },
-
     "auto-start-on-boot": {
       "enabled": true
     },
-
     "auto-shutdown": {
       "enabled": true,
       "schedule": "0 0 * * *"
     },
-
     "performance-monitoring": {
       "enabled": true,
       "thresholds": {
@@ -219,23 +196,19 @@
         "memory-usage": 90
       }
     },
-
     "resource-management": {
       "enabled": true,
       "max-players": 50,
       "max-memory": "4G"
     },
-
     "error-recovery": {
       "enabled": true,
       "auto-restart": true
     },
-
     "auto-optimization": {
       "enabled": true,
       "optimize-interval": "weekly"
     },
-
     "external-service-integration": {
       "enabled": true,
       "services": ["monitoring", "notifications", "analytics"]
